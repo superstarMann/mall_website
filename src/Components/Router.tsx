@@ -1,17 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Header } from './Header';
-import { Outer } from '../Route/Outer';
-import { Top } from '../Route/Top';
-import { Accessories } from '../Route/Accessories';
-import { Bottom } from '../Route/Bottom';
+import Header from './Header';
+import { Exchanges } from '../Route/Exchanges';
+import { Coins } from '../Route/Coins';
+import { Ranks } from '../Route/Ranks';
+
 
 export const Router = () => {
     const ClientRoutes = [
-        {component: <Outer/> , path: "/"},
-        {component: <Top/>, path: "/top"},
-        {component: <Bottom/>, path: "/bottom"},
-        {component: <Accessories/>, path: "/accessories"},
+        {component: <Coins/>, path: "/"},
+        {component: <Ranks/>, path: "/ranks"},
+        {component: <Exchanges/> , path: "/exchanges"},
     ]
 
     return (
